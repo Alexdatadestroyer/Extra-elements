@@ -16,7 +16,7 @@ int main ()
     
     for (x = 0; x <= strlen (entrada); x++)
     {
-        // IF: A cada espaço ou se chegar no final da frase, significa que já temos uma palavra isolada
+        // IF: A cada espaÃ§o ou se chegar no final da frase, significa que jÃ¡ temos uma palavra isolada
         
         if ((entrada[x] == ' ') || (entrada[x] == '\0'))
         {
@@ -24,7 +24,7 @@ int main ()
             scorePalavra = 0;
             y = 0;
             
-            // FOR do Z: Temos um início e um final, agora é calcular o valor de uma palavra com base em suas letras
+            // FOR do Z: Temos um inÃ­cio e um final, agora Ã© calcular o valor de uma palavra com base em suas letras
             
             for (z = primeiro; z <= ultimo; z++)
             {
@@ -43,7 +43,7 @@ int main ()
 
             processamento[y] = '\0';
             
-            // Se uma palavra tiver um valor maior que as anteriores, então copia-se a palavra para a String de Saída e atualiza-se o recorde de palavra com maior valor registrado
+            // Se uma palavra tiver um valor maior que as anteriores, entÃ£o copia-se a palavra para a String de SaÃ­da e atualiza-se o recorde de palavra com maior valor registrado
             
             if (scorePalavra > maiorScorePalavra)
             {
