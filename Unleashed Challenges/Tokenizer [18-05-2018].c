@@ -10,18 +10,18 @@ int main ()
     scanf ("%[^\n]s", entrada);
     getchar();
     
-    inicio = 0;        // Vari·vel de inÌcio da palavra
-    x1 = 0;        // Vari·vel de percurso das Linhas da String de SaÌda
+    inicio = 0;        // Vari√°vel de in√≠cio da palavra
+    x1 = 0;        // Vari√°vel de percurso das Linhas da String de Sa√≠da
     
-    // FOR do I: Percorrer a String de Entrada em busca de palavras pra separ·-las numa lista...
+    // FOR do I: Percorrer a String de Entrada em busca de palavras pra separ√°-las numa lista...
     
     for (i = 0; i <= strlen (entrada); i++)
     {
-        // IF: Aqui o filtro È o valor de uma posiÁ„o da String n„o ser alfabÈtico [a-z] e [A-Z]
+        // IF: Aqui o filtro √© o valor de uma posi√ß√£o da String n√£o ser alfab√©tico [a-z] e [A-Z]
         
         if (!isalpha (entrada[i]))
         {
-            // IF: Caso exclusivo: Se uma Letra N√O VIER depois de um caractere n„o-alfabÈtico, pegaremos outra pra servir de inÌcio da palavra (que, espera-se, ser alfabÈtico, pois caso contr·rio...)
+            // IF: Caso exclusivo: Se uma Letra N√ÉO VIER depois de um caractere n√£o-alfab√©tico, pegaremos outra pra servir de in√≠cio da palavra (que, espera-se, ser alfab√©tico, pois caso contr√°rio...)
             
             if (i == inicio)
             {
@@ -29,10 +29,10 @@ int main ()
             }
             else
             {
-                final = i-1;    // Vari·vel de final da palavra
-                x2 = 0;        // Vari·vel de percurso das Colunas da String de SaÌda
+                final = i-1;    // Vari√°vel de final da palavra
+                x2 = 0;        // Vari√°vel de percurso das Colunas da String de Sa√≠da
                 
-                // FOR do J: Ir acrescentando letra por letra na String de Entrada na String de SaÌda
+                // FOR do J: Ir acrescentando letra por letra na String de Entrada na String de Sa√≠da
                 
                 for (j = inicio; j <= final; j++)
                 {
@@ -47,7 +47,7 @@ int main ()
         }
     }
     
-    // FOR do I usando o X1: Impress„o de todas as palavras a cada linha nova
+    // FOR do I usando o X1: Impress√£o de todas as palavras a cada linha nova
     
     for (i = 0; i < x1; i++)
     {
