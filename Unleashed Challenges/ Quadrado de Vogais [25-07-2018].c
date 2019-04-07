@@ -17,7 +17,7 @@ int verificaMatriz (int linhas, int colunas, char matriz[linhas][colunas])
             contVogal = 0;
             tem4Vogais = 0;
 
-            // Verificação de cada um dos 4 elementos do Vetor "quadrantes" em busca das letras a, e, i, o, u
+            // VerificaÃ§Ã£o de cada um dos 4 elementos do Vetor "quadrantes" em busca das letras a, e, i, o, u
             
             for (x = 0; x < 4; x++)
             {
@@ -27,7 +27,7 @@ int verificaMatriz (int linhas, int colunas, char matriz[linhas][colunas])
                 }
             }
 
-            // IF: Se acontecer de serem encontradas 4 vogais, então não há mais necessidade de continuar a busca.
+            // IF: Se acontecer de serem encontradas 4 vogais, entÃ£o nÃ£o hÃ¡ mais necessidade de continuar a busca.
 
             if (contVogal == 4)
             {
@@ -36,7 +36,7 @@ int verificaMatriz (int linhas, int colunas, char matriz[linhas][colunas])
             }
         }
 
-        // IF: Se já encontramos um quadrado de 4 vogais, então para-se o processo de verificação linha a linha.
+        // IF: Se jÃ¡ encontramos um quadrado de 4 vogais, entÃ£o para-se o processo de verificaÃ§Ã£o linha a linha.
 
         if (tem4Vogais)
         {
@@ -74,7 +74,7 @@ int main ()
 
     retorno = verificaMatriz (linhas, colunas, matriz);
 
-    // Verificação do retorno (1 ou 0) da função "verificaMatriz" acima
+    // VerificaÃ§Ã£o do retorno (1 ou 0) da funÃ§Ã£o "verificaMatriz" acima
 
     (retorno) ? printf ("True\n") : printf ("False\n");
 
