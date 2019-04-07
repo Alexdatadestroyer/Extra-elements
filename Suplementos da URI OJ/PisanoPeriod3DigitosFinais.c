@@ -4,7 +4,7 @@
 int main ()
 {
 	int casos, i, j, a, b, c, valor, vdecimal;              // A: Anterior | B: Meio | C: Posterior (elemento-termo)
-	char input[10001], output[4];							              // Entrada: 10000 dígitos no Máximo | Saída: 3 dígitos
+	char input[10001], output[4];				// Entrada: 10000 dígitos no Máximo | Saída: 3 dígitos
 	
 	scanf ("%d", &casos);
 	
@@ -39,14 +39,14 @@ int main ()
 			
 		for (j = 0; input[j] != '\0'; j++)
 		{
-            vdecimal *= 2;									// Multiplicação de 2 em 2 por se tratar de um Número Binário
-            vdecimal += (int) (input[j] - 48);
+            		vdecimal *= 2;					// Multiplicação de 2 em 2 por se tratar de um Número Binário
+            		vdecimal += (int) (input[j] - 48);
             
-            if (vdecimal >= 1500)
-            {
-                vdecimal %= 1500;						    // Delimitando o termo a ser procurado na Sequência de Fibonacci
-            }
-        }
+            		if (vdecimal >= 1500)
+            		{
+                		vdecimal %= 1500;			// Delimitando o termo a ser procurado na Sequência de Fibonacci
+            		}
+        	}
 			
 		/* Achando o Termo da Sequência de Fibonacci correspondente ao recebido na Variável "vdecimal" já delimitado.
 		   
