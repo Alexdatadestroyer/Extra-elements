@@ -31,5 +31,5 @@ $(eval
             if (p == 1) $(1) + ' é PRIMO!';
             else $(1) + ' não é primo';
         }
-	  }
+    }
 )
