@@ -14,6 +14,14 @@
 	
 	Um método para exibição de valores de forma rápida foi inserida no algoritmo para funcionar entre os valores 13 e 20 para N. A
 	complexidade foi baixada para Linear [O(n)], que, geralmente, é a forma preferida para solução de fatoriais.
+
+        --> Função "executaFatorialAte12": Complexidade Fatorial O(n!). Tempo de resposta de crescimento astronômico para valores N
+            maiores. Ideal para resultados em até N igual ou menor que 10.
+
+        --> Função "executaFatorial13Ate20": Complexidade Linear O(n). Tempo de resposta tende a não crescer tanto se o valor N for
+            cada vez maior. Em contrapartida, a variável inteira de 64 bits em questão tende a não oferecer resposta correta se o
+            valor N ultrapassar 20. Fazer desse jeito tanto de forma iterativa (estruturas de repetição) como de forma recursiva,
+            costumam ser as formas mais recomendadas de resolução de fatoriais, conforme dito anteriormente.
 */
 
 #include <stdio.h>
