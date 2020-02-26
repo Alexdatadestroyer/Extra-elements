@@ -7,3 +7,11 @@
 */
 
 $(eval var T = Date.now() - Date.parse('$(twitch $(channel) "{{uptimeAt}}")'); var H = Math.trunc (T / 3600000); var M = Math.trunc ((T % 3600000) / 60000); (H > 0) ? (M >= 0 && M <= 4) ? "/me $(twitch $(channel) "{{displayName}}") está em live em torno de " + H + " hora(s) e " + M + " minuto(s). A essa altura, tu já deveria ter consumido pelo menos uns " + (120*H + 2*M) + "mL de água para uma boa hidratação! DrinkPurple " : " " : " ")
+
+/* Beautificado (Melhorado e identado). Agora é legível da seguinte forma: */
+
+$(eval
+    var T = Date.now() - Date.parse('$(twitch $(channel) "{{uptimeAt}}")');
+    var H = Math.trunc(T / 3600000);
+    var M = Math.trunc((T % 3600000) / 60000);
+    (H > 0) ? (M >= 0 && M <= 4) ? "/me $(twitch $(channel) " {{displayName}} ") está em live em torno de " + H + " hora(s) e " + M + " minuto(s). A essa altura, tu já deveria ter consumido pelo menos uns " + (120 * H + 2 * M) + "mL de água para uma boa hidratação! DrinkPurple " : " " : " ")
